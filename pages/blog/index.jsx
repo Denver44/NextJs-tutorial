@@ -3,7 +3,7 @@ import React from "react";
 function index() {
   return (
     <div>
-      <h1>Hello NextJS</h1>
+      <h1>I am Blog Page</h1>
     </div>
   );
 }
