@@ -12,7 +12,7 @@ function index() {
         <li>
           <Link
             href={{
-              pathname: "/product/[id]",
+              pathname: "/product",
               query: "/product",
             }}
           >
