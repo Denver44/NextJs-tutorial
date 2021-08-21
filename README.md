@@ -1,20 +1,11 @@
-# Pages in Depth
-
-    - Main folder in NextJs
-    - Pages : Most IMPORTANT
-    - Public : In this we mostly put images
-    -  Styles : CSS
-
-# PAGES & FILE-BASED ROUTING
-
-#### Code-based Routing
+**Code-based Routing**
 
     1. BoilerPlate setup in code required
-    2. Straightforward but includes new components+concepts
-    3. File +folder setup doesn't matter at all
+    2. Straightforward but includes new components + concepts.
+    3. File + Folder setup doesn't matter at all.
     4. Navigation works with Link component and imperatively.
 
-#### File-based Routing
+**File-based Routing**
 
     1. No extra boiler plate required
     2. Intuitive system
@@ -36,7 +27,7 @@
 
 ### Extracting Dynamic Path Segment Data (Dynamic Routes)
 
-    1. We have to use a Hook called useRouter from 'next/router and when working with class based then withRouter.
+    1. We have to use a Hook called useRouter from 'next/router and when working with classes then withRouter.
     1. useRouter() return a object.
     2. we can use various methods like pathname,query (return a object it will give the concrete value).
 
@@ -58,3 +49,9 @@
 
     1. create 404.js file to show your Custom Error page
     2. else nextjs will show its Default Error page.
+
+### IMPORTANT
+
+    - File Name are Case Sensitive.
+    - create a next.config.js file to allow that page only which has pageExtension mentioned in that file.
+    - Because of next.config.js we can create our unit tests "file.specs.js" and Next.js will not create/open a new route at http://localhost:3000/file.spec
