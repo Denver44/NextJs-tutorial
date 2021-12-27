@@ -1,13 +1,17 @@
-import Thumbnail from "../Thumbnails";
+import Thumbnail from '../Thumbnails';
 
-function Card({ results }) {
+interface CardsProps {
+  results: any;
+}
+
+const Card = (props: CardsProps) => {
   return (
     <div className="px-5 my-10 sm:grid md:grid-cols-2 xl:grid-cols-3 3xl:flex flex-wrap justify-center">
-      {results.map((result) => (
+      {props.results.map((result: any) => (
         <Thumbnail key={result.id} result={result} />
       ))}
     </div>
   );
-}
+};
 
 export default Card;
