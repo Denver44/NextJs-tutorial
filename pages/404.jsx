@@ -1,13 +1,13 @@
-import React from "react";
+import React from 'react';
 
-function NotFoundPage() {
+const PageNotFound = () => {
   return (
     <div>
       <h1>Page not found :😠</h1>
     </div>
   );
-}
+};
 
-export default NotFoundPage;
+export default PageNotFound;
 
 // Here u can Give whatever name u want not like react to give same name as fileName
