@@ -1,8 +1,13 @@
-import Image from "next/image";
-import { ThumbUpIcon } from "@heroicons/react/outline";
+import Image from 'next/image';
+import { ThumbUpIcon } from '@heroicons/react/outline';
 
-const Thumbnail = ({ result }) => {
-  const BASE_URL = "https://image.tmdb.org/t/p/original/";
+interface ThumbnailProps {
+  result: any;
+}
+const BASE_URL = 'https://image.tmdb.org/t/p/original/';
+
+const Thumbnail = (props: ThumbnailProps) => {
+  const { result } = props;
   return (
     <div className="group p-2 cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50">
       <Image
@@ -13,6 +18,7 @@ const Thumbnail = ({ result }) => {
         width={1920}
         height={1080}
         layout="responsive"
+        alt={`${result.poster_path}`}
       />
 
       <div className="p-2">
