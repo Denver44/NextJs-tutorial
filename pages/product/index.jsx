@@ -1,9 +1,10 @@
-import React from "react";
+import React from 'react';
+import { HeadingTag } from '../about';
 
 function product() {
   return (
     <div>
-      <h1>I am product page</h1>
+      <HeadingTag heading={'I am Product Page'} />
     </div>
   );
 }

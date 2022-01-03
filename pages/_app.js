@@ -2,7 +2,8 @@ import '../styles/globals.css';
 import Head from 'next/head';
 import Layout from '../components/Layout/Layout';
 
-function MyApp({ Component, pageProps }) {
+const MyApp = ({ Component, pageProps }) => {
+  console.log('Hello');
   return (
     <div>
       <Head>
@@ -15,6 +16,13 @@ function MyApp({ Component, pageProps }) {
       </Layout>
     </div>
   );
-}
+};
 
 export default MyApp;
+
+// Here this will be root file if it is present and if it is not present then index file will be the root entry file.
+// This file will be executed on both the client and server side.
+// Here we can create our Head and layout
+// The _app file get two things as a props one is all components and pageProps which those components need
+
+// And we hook the global CSS file here also.
