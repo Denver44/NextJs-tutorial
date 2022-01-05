@@ -1,5 +1,5 @@
-import React from "react";
-import Link from "next/link";
+import React from 'react';
+import Link from 'next/link';
 function index() {
   return (
     <div>
@@ -12,8 +12,8 @@ function index() {
         <li>
           <Link
             href={{
-              pathname: "/product",
-              query: "/product",
+              pathname: '/product',
+              // query: "/product",
             }}
           >
             Product

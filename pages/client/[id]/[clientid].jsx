@@ -1,13 +1,19 @@
-import { useRouter } from "next/router";
-import React from "react";
+import { useRouter } from 'next/router';
+import React from 'react';
 
 function index() {
   const route = useRouter();
   return (
     <div>
-      <h1>I am inside client {route.query.id}</h1>
-      <h1> clientid Dynamicpage {route.query.clientid}</h1>
-      <h1> {route.pathname}</h1>
+      <div>
+        <h1>I am inside client {route.query.id}</h1>
+      </div>
+      <div>
+        <h2> clientId : {route.query.clientid}</h2>
+      </div>
+      <div>
+        <h3> Path Name : {route.pathname}</h3>
+      </div>
     </div>
   );
 }

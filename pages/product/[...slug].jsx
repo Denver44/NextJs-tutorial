@@ -1,9 +1,14 @@
-import React from "react";
+import { useRouter } from 'next/router';
+import React from 'react';
 
 function CatchAllPage() {
+  const router = useRouter();
+  console.log(router);
+
   return (
     <div>
-      <h1>I am Catch all Page inside product</h1>
+      <h1>I will catch all Page inside product Page</h1>
+      <h3>Path is {router.asPath}</h3>
     </div>
   );
 }
