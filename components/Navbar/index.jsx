@@ -14,19 +14,6 @@ const Header = () => {
             <Link href="/about">About</Link>
           </li>
           <li>
-            <Link
-              href={{
-                pathname: '/product',
-                query: '/product',
-              }}
-            >
-              Product
-            </Link>
-          </li>
-          <li>
-            <Link href="/client">Client</Link>
-          </li>
-          <li>
             <Link href="#">Contact us</Link>
           </li>
           <div className={style.search}>
